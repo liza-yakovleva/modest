@@ -3,6 +3,17 @@
     max-width: 720px;
   }
 }
+  @media(max-width:767px) {
+  .section__3-imge-container {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+.section__3-bl1-name-container {
+ height: 5%;
+}
+
+  
+}
 
 @media(min-width:992px) {
   .container {
