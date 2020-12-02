@@ -26,16 +26,15 @@
     flex: 0 0 58.331%;
     max-width: 58.331%;
   }
-  .button {
-    transform: translate(340%, -100%);
-  }
+   
+  
 }
 
 @media(min-width:1200px) {
   .container {
     max-width: 1140px;
   }
-  
+ 
 }
 
 @media(max-width:990px) {
@@ -43,9 +42,14 @@
     flex-direction: column;
     display: flex;
   }
+ 
    .section__2-row {
      flex-direction: column;
      display: flex;
+   }
+   .button,
+   .input-search {
+     display: none;
    }
 }
 
@@ -55,13 +59,18 @@
   html {
     font-size: 8px;
   }
-
+.button {
+  transform: translate(340%, -100%);
+  line-height: 21px;
+}
 }
 @media (max-width: 1350px) {
   html {
     font-size: 7px;
   }
-
+.button {
+  line-height: 21px;
+}
   .visible-lg {
     display: none;
   }
