@@ -189,6 +189,13 @@ position: static;
   width: 300px;
   margin: 0 auto;
 }
+.img-wrap {
+  width: 300px;
+  height: 100%;
+}
+.bl-hiden {
+   margin-top: 67%;
+}
 .sec-6-img {
   width: 290px;
  
