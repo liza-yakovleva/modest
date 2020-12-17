@@ -11,47 +11,51 @@
   <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="media.css">
 <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+</script>
  <title>Blog</title>
 </head>
 <body>
-  <ul class="m-header-ul">
-     <li class="close-menu">&times;</li>
-    <li class="header-li"><a href="#home"> HOME</a></li>
-    <li class="header-li"><a href="#about"> about</a></li>
-    <li class="header-li"><a href="#work"> work</a></li>
-    <li class="header-li"><a href="#team"> TEAM</a></li>
-    <li class="header-li"><a href="#services"> services</a></li>
-    <li class="header-li"><a href="#features"> FEATURES</a></li>
-    <li class="header-li"><a href="#contact"> contact</a></li>
-  </ul>
+  
  <header class="header">
    <div class="container">
      <div class="row header-row">
-       <div class="col-md-2 col-xs-12 logo">
+       <div class="col-md-2 col-xs-10 logo">
          <a href="#">
            <img src="img/header-logo.png" alt="logo">
          </a>
        </div>
        
-       <div class="col-md-8 col-xs-12  menu">
+       <div class="col-md-8 col-xs-2  menu">
         <a href="#" class="m-menu-link">
           <i class="fa fa-bars"></i>
         </a>
 <ul class="header-ul visible-lg">
   
-    <li class="header-li"><a href="#home">HOME</a></li>
-  <li class="header-li"><a href="#about"> about</a></li>
-  <li class="header-li"><a href="#work"> work</a></li>
-  <li class="header-li"><a href="#team"> TEAM</a></li>
-  <li class="header-li"><a href="#services"> services</a></li>
-  <li class="header-li"><a href="#features"> FEATURES</a></li>
+    <li class="header-li"><a class="header-li-a" href="#home">HOME</a></li>
+  <li class="header-li"><a class="header-li-a" href="#about"> about</a></li>
+  <li class="header-li"><a class="header-li-a" href="#work"> work</a></li>
+  <li class="header-li"><a class="header-li-a" href="#team"> TEAM</a></li>
+  <li class="header-li"><a class="header-li-a" href="#services"> services</a></li>
+  <li class="header-li"><a class="header-li-a" href="#features"> FEATURES</a></li>
   <a href="#contact">
     <li class="header-li"> contact
   </li></a>
 </ul> 
          
+
+<ul class="m-header-ul">
+  <li class="close-menu">&times;</li>
+  <li class="header-li"><a class="header-li-a" href="#home"> HOME</a></li>
+  <li class="header-li"><a class="header-li-a" href="#about"> about</a></li>
+  <li class="header-li"><a class="header-li-a" href="#work"> work</a></li>
+  <li class="header-li"><a class="header-li-a" href="#team"> TEAM</a></li>
+  <li class="header-li"><a class="header-li-a" href="#services"> services</a></li>
+  <li class="header-li"><a class="header-li-a" href="#features"> FEATURES</a></li>
+  <li class="header-li"><a class="header-li-a" href="#contact"> contact</a></li>
+</ul>
        </div>
-       <div class="col-md-2 col-xs-12 search">
+       <div class="col-md-2  search">
  <form action="app.php" method="post">
    <input type="search" name="search" placeholder="search" class="input-search">
    <div class="button"><button type="submit" class="ic-serch"></button></div>
@@ -543,7 +547,8 @@
        </div>
      </div>
      <div class="col-md-6 col-xs-12 sec__7-bl3 ">
-<form action="app.php" method="post">
+<form action="app.php" method="post" class="sec__7-form">
+  <div class="btn-close">X</div>
   <div class="name-email">
     <div class="name-cnt">
   <label for="name" class="label">Your Name</label>
@@ -557,9 +562,10 @@
 <div class="texter-cnt">
  <label for="message" class="label l-texter">Your message</label>
 <textarea name="" id="message" cols="30" rows="10" class="sec__7-input txter"></textarea>
-<button class="sec__7-btn form-btn">send message</button>
+
 </div>
 </form>
+<button class="sec__7-btn form-btn">send message</button>
      </div>
   </div>
 </div>
@@ -590,25 +596,14 @@
 
  </footer>
 
+<form action="app.php" method="post" class="modal-sub">
+  <!-- <div class="modal-sub-btn-close">X</div> -->
+  <h3 class="modal-sub-h3">Subscribe to us</h3>
+<input type="text" class="modal-sub-txt" placeholder="Your Name">
+<input type="email" class="modal-sub-txt" placeholder="Your email">
+<button class="modal-sub-btn">Subscribe</button>
+</form>
 
-
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      var link = $('.m-menu-link')
-      var close = $('.close-menu');
-      var menu = $('.m-header-ul')
-      link.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active');
-
-      });
-      close.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active')
-      });
-    });
-  </script>
+<script src="app.js"></script>
 </body>
 </html>
