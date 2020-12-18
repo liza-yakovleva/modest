@@ -752,9 +752,16 @@ text-transform: uppercase;
 }
 .form-show {
 display: block;
+
 }
 .form-hide {
   display: none;
+}
+.btn-marg {
+  margin-top: 220px;
+}
+.btn-no-marg {
+ margin-top: 200px;
 }
 .btn-close {
   cursor: pointer;
@@ -855,7 +862,9 @@ margin-bottom: 30px ;
 .text-bold {
   font-weight: 700;
 }
-
+.btn-close {
+  font-size: 18px;
+}
 
 
 
@@ -892,12 +901,12 @@ width: 80%;
   flex-direction: column;
  justify-content: space-around;
  padding: 25px;
- position: relative;
  background: #23b7a4;
  border-radius: 10px;
  position: fixed;
- top:45%;
- left:45%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 }
 .modal-sub-show{
   display: block;
@@ -907,14 +916,11 @@ width: 80%;
 }
 .modal-sub-h3 {
   align-self: center;
+  font-size: 18px;
   color: #3a454d;
   text-transform: uppercase;
 }
-/* .modal-sub-btn-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-} */
+
 .modal-sub-txt {
 border-radius: 5px;
 color: #8d8f92;

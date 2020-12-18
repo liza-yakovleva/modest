@@ -18,11 +18,16 @@
  align-items: center;
   }
 .txter {
-  width: 300px;
+  width: 280px;
+  height: 80px;
 }
 .search {
   display: none;
 }
+.sec__7-form {
+  width: 280px;
+}
+
 }
 @media(min-width:768px) {
   .container {
@@ -153,8 +158,14 @@ margin-bottom: 20px;
    align-items: center;
  }
  .sec__7-bl3 {
-position: static;
-
+position: relative;
+width: 100%;
+text-align: center;
+ }
+ .sec__7-form {
+   position: absolute;
+   top: 0;
+   left: 0;
  }
  .name-cnt {
    margin-right: 10px;
@@ -163,7 +174,27 @@ position: static;
    padding-bottom: 50px;
     align-items: center;
 }
-
+.sec__7-btn {
+  margin-bottom: 20px;
+ 
+}
+.form-btn {
+  margin-top: 400px;
+}
+.form-show {
+  
+position: relative;
+margin: 10px auto;
+}
+.sec__7-form {
+ 
+  top: 0px;
+  left: 0px;
+  
+}
+.form-btn {
+  margin-top: 0px;
+}
 }
 @media (max-width: 1350px) {
   html {

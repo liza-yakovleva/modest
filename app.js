@@ -6,7 +6,7 @@ let closeBtn = document.querySelector(".btn-close")
 
 function closeFormSendMessage() {
   formSendMessage.classList.remove("form-show");
- formSendMessage.classList.add("form-hide");
+  formSendMessage.classList.add("form-hide");
 }
 
 function openFormSendMessage() {
@@ -37,29 +37,24 @@ $(function () {
 });
 
 // ! modal
-// let scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
-// scrollHeight = scrollHeight / 2;
 
 let formModSub = document.querySelector(".modal-sub")
 let scrollHeight = document.documentElement.getBoundingClientRect().bottom / 2;
-console.log(scrollHeight);
-
-window.addEventListener('scroll', function () {
-  let yOffset = window.pageYOffset;
-  if (yOffset >= scrollHeight) {
-openFormModSub()
-  } else {
-    closeFormModSub()
-  }
- 
-});
+// closeFormModSub()
 function closeFormModSub() {
   formModSub.classList.remove(".modal-sub-show");
   formModSub.classList.add("modal-sub-hide");
 }
-
 function openFormModSub() {
   formModSub.classList.add(".modal-sub-show");
   formModSub.classList.remove("modal-sub-hide");
 }
+window.addEventListener('scroll', function () {
+ let yOffset = window.pageYOffset;
+  if (yOffset >= scrollHeight) {
+    openFormModSub()
+  } else {
+    closeFormModSub()
+  }
+});
 
